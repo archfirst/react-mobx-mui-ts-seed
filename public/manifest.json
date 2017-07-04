@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React + MobX + Material UI + TypeScript Seed",
+  "name": "Seed Project for React + MobX + Material UI + TypeScript",
   "icons": [
     {
       "src": "favicon.ico",
