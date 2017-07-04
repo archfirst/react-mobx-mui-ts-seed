@@ -6,7 +6,7 @@ import Typography from 'material-ui/Typography';
 import AddIcon from 'material-ui-icons/Add';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
-import { Titlebar } from '../core/components';
+import { Titlebar } from 'core/components';
 
 const styleSheet = createStyleSheet('HomePage', (theme) => ({
     root: {

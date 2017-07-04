@@ -17,13 +17,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "*",
-        "src/*"
-      ]
-    }
+    "baseUrl": "src"
   },
   "exclude": [
     "node_modules",
