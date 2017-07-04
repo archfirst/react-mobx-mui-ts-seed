@@ -1,7 +1,14 @@
 {
   "name": "react-mobx-mui-ts-seed",
+  "description": "Seed Project for React + MobX + Material UI + TypeScript",
   "version": "0.1.0",
-  "private": true,
+  "main": "index.js",
+  "author": "Naresh Bhatia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/archfirst/react-mobx-mui-ts-seed.git"
+  },
   "devDependencies": {
     "react-scripts-ts": "2.3.2"
   },
