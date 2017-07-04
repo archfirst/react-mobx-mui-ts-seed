@@ -1,22 +1,49 @@
 import * as React from 'react';
-import './app.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import createPalette from 'material-ui/styles/palette';
+import createMuiTheme from 'material-ui/styles/theme';
+import createTypography from 'material-ui/styles/typography';
+import { blue, pink, red } from 'material-ui/styles/colors';
+import { Provider } from 'mobx-react';
+import Shell from './shell';
 
-const logo = require('./logo.svg');
+let styleManager;
 
 class App extends React.Component<{}, {}> {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+    render() {
+        const palette = createPalette({
+            primary: blue,
+            accent: pink,
+            error: red,
+            type: 'light'
+        });
+
+        const typography = createTypography(palette, {
+            fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif'
+        });
+
+        const theme = createMuiTheme({palette, typography});
+
+        if (!styleManager) {
+            const themeContext = MuiThemeProvider.createDefaultContext({theme});
+            styleManager = themeContext.styleManager;
+        }
+        else {
+            styleManager.updateTheme(theme);
+        }
+
+        return (
+            <MuiThemeProvider theme={theme} styleManager={styleManager}>
+                <Provider>
+                    <Router>
+                        <Shell />
+                    </Router>
+                </Provider>
+            </MuiThemeProvider>
+        );
+    }
 }
 
 export default App;
