@@ -24,10 +24,10 @@ class App extends React.Component<{}, {}> {
             fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif'
         });
 
-        const theme = createMuiTheme({palette, typography});
+        const theme = createMuiTheme({ palette, typography });
 
         if (!styleManager) {
-            const themeContext = MuiThemeProvider.createDefaultContext({theme});
+            const themeContext = MuiThemeProvider.createDefaultContext({ theme });
             styleManager = themeContext.styleManager;
         }
         else {
