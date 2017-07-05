@@ -54,7 +54,7 @@ class HomePage extends React.Component<HomePageProps, {}> {
         return (
             <div className={classes.root}>
 
-                <Titlebar>React MobX MUI Seed</Titlebar>
+                <Titlebar>React MobX MUI TypeScript Seed</Titlebar>
 
                 <div className={classes.content}>
 
