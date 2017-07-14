@@ -1,11 +1,13 @@
 import * as React from 'react';
-import Button from 'material-ui/Button';
-import TextField from 'material-ui/TextField';
-import { createStyleSheet, withStyles } from 'material-ui/styles';
-import Typography from 'material-ui/Typography';
+
 import AddIcon from 'material-ui-icons/Add';
+import Button from 'material-ui/Button';
+import { createStyleSheet, withStyles } from 'material-ui/styles';
+import TextField from 'material-ui/TextField';
+import Typography from 'material-ui/Typography';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
+
 import { Titlebar } from 'core/components';
 
 const styleSheet = createStyleSheet('HomePage', theme => ({
@@ -43,9 +45,9 @@ class HomePage extends React.Component<HomePageProps, {}> {
 
     @action
     // tslint:disable-next-line
-    onChange(event: any) {
+    onChange = (event: any) => {
         this.name = event.target.value;
-    }
+    };
 
     render() {
         const { classes } = this.props;
@@ -88,7 +90,7 @@ class HomePage extends React.Component<HomePageProps, {}> {
                             label="Name"
                             className={classes.input}
                             value={this.name}
-                            onChange={event => this.onChange(event)}
+                            onChange={this.onChange}
                         />
                     </div>
                     <Typography type="body2">

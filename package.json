@@ -33,6 +33,7 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
+    "lint": "tslint 'src/**/*.ts*'",
     "format": "prettier --print-width 120 --tab-width 4 --single-quote --parser typescript --write 'src/**/*.ts*'",
     "precommit": "lint-staged"
   },

@@ -1,9 +1,10 @@
 // Example: <Titlebar>Home</Titlebar>
 
 import * as React from 'react';
+
 import AppBar from 'material-ui/AppBar';
-import Typography from 'material-ui/Typography';
 import Toolbar from 'material-ui/Toolbar';
+import Typography from 'material-ui/Typography';
 
 interface TitlebarProps {
     // tslint:disable-next-line
