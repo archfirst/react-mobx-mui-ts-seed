@@ -10,6 +10,9 @@
     "url": "https://github.com/archfirst/react-mobx-mui-ts-seed.git"
   },
   "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.1",
+    "prettier": "^1.5.2",
     "react-scripts-ts": "2.3.2"
   },
   "dependencies": {
@@ -29,6 +32,14 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "format": "prettier --print-width 120 --tab-width 4 --single-quote --parser typescript --write 'src/**/*.ts*'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts*": [
+      "prettier --print-width 120 --tab-width 4 --single-quote --parser typescript --write",
+      "git add"
+    ]
   }
 }

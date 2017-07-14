@@ -4,14 +4,14 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { HomePage } from './features';
 // import DevTools from 'mobx-react-devtools';
 
-const styleSheet = createStyleSheet('Shell', (theme) => ({
+const styleSheet = createStyleSheet('Shell', theme => ({
     '@global': {
         html: {
             height: '100%',
-            boxSizing: 'border-box',
+            boxSizing: 'border-box'
         },
         '*, *:before, *:after': {
-            boxSizing: 'inherit',
+            boxSizing: 'inherit'
         },
         body: {
             height: '100%',
@@ -29,11 +29,11 @@ const styleSheet = createStyleSheet('Shell', (theme) => ({
             WebkitOverflowScrolling: 'touch'
         },
         main: {
-            height: '100%',
+            height: '100%'
         }
     },
     root: {
-        height: '100%',
+        height: '100%'
     }
 }));
 
@@ -43,7 +43,6 @@ interface ShellProps {
 }
 
 class Shell extends React.Component<ShellProps, {}> {
-
     render() {
         const { classes } = this.props;
 

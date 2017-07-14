@@ -11,7 +11,6 @@ import Shell from './shell';
 let styleManager;
 
 class App extends React.Component<{}, {}> {
-
     render() {
         const palette = createPalette({
             primary: blue,
@@ -29,8 +28,7 @@ class App extends React.Component<{}, {}> {
         if (!styleManager) {
             const themeContext = MuiThemeProvider.createDefaultContext({ theme });
             styleManager = themeContext.styleManager;
-        }
-        else {
+        } else {
             styleManager.updateTheme(theme);
         }
 

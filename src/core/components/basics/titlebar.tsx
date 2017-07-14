@@ -11,13 +11,14 @@ interface TitlebarProps {
 }
 
 export function Titlebar(props: TitlebarProps) {
-
     const { children } = props;
 
     return (
         <AppBar position="static">
             <Toolbar>
-                <Typography type="title" color="inherit">{children}</Typography>
+                <Typography type="title" color="inherit">
+                    {children}
+                </Typography>
             </Toolbar>
         </AppBar>
     );
