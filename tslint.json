@@ -3,6 +3,7 @@
     "rules": {
         "arrow-parens": false,
         "interface-name": [true, "never-prefix"],
+        "jsx-no-multiline-js": false,
         "member-access": false,
         "object-literal-key-quotes": [true, "as-needed"],
         "object-literal-sort-keys": false,
