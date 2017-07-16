@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { blue, pink, red } from 'material-ui/styles/colors';
+import blue from 'material-ui/colors/blue';
+import pink from 'material-ui/colors/pink';
+import red from 'material-ui/colors/red';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import createPalette from 'material-ui/styles/palette';
 import createMuiTheme from 'material-ui/styles/theme';
