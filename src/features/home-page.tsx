@@ -64,19 +64,40 @@ class HomePage extends React.Component<HomePageProps, {}> {
                         <Button raised={true} className={classes.button}>
                             Default
                         </Button>
-                        <Button raised={true} color="primary" className={classes.button}>
+                        <Button
+                            raised={true}
+                            color="primary"
+                            className={classes.button}
+                        >
                             Primary
                         </Button>
-                        <Button raised={true} color="accent" className={classes.button}>
+                        <Button
+                            raised={true}
+                            color="accent"
+                            className={classes.button}
+                        >
                             Accent
                         </Button>
-                        <Button raised={true} color="contrast" className={classes.button}>
+                        <Button
+                            raised={true}
+                            color="contrast"
+                            className={classes.button}
+                        >
                             Contrast
                         </Button>
-                        <Button raised={true} color="accent" disabled={true} className={classes.button}>
+                        <Button
+                            raised={true}
+                            color="accent"
+                            disabled={true}
+                            className={classes.button}
+                        >
                             Disabled
                         </Button>
-                        <Button fab={true} color="primary" className={classes.button}>
+                        <Button
+                            fab={true}
+                            color="primary"
+                            className={classes.button}
+                        >
                             <AddIcon />
                         </Button>
                     </div>
