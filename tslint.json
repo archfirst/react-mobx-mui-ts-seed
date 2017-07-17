@@ -7,7 +7,6 @@
         "member-access": false,
         "object-literal-key-quotes": [true, "as-needed"],
         "object-literal-sort-keys": false,
-        "quotemark": [true, "single", "jsx-double"],
         "semicolon": false,
         "trailing-comma": false
     }
