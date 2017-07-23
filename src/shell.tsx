@@ -29,7 +29,7 @@ const styleSheet = createStyleSheet('Shell', theme => ({
             // Use momentum-based scrolling on iOS devices
             WebkitOverflowScrolling: 'touch'
         },
-        main: {
+        '#root': {
             height: '100%'
         }
     },
