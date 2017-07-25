@@ -11,22 +11,22 @@
   },
   "devDependencies": {
     "husky": "^0.14.3",
-    "lint-staged": "^4.0.1",
+    "lint-staged": "^4.0.2",
     "prettier": "^1.5.3",
     "react-scripts-ts": "2.4.0"
   },
   "dependencies": {
-    "@types/jest": "^20.0.2",
-    "@types/node": "^8.0.13",
-    "@types/react": "^15.0.38",
+    "@types/jest": "^20.0.4",
+    "@types/node": "^8.0.16",
+    "@types/react": "^15.0.39",
     "@types/react-dom": "^15.5.1",
-    "material-ui": "^1.0.0-alpha.21",
+    "material-ui": "^1.0.0-beta.2",
     "material-ui-icons": "^1.0.0-alpha.19",
     "mobx": "^3.2.1",
     "mobx-react": "^4.1.8",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts-ts start",

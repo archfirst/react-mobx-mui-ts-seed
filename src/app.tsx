@@ -12,8 +12,6 @@ import { Provider } from 'mobx-react';
 
 import Shell from './shell';
 
-let styleManager;
-
 class App extends React.Component<{}, {}> {
     render() {
         const palette = createPalette({
@@ -29,17 +27,8 @@ class App extends React.Component<{}, {}> {
 
         const theme = createMuiTheme({ palette, typography });
 
-        if (!styleManager) {
-            const themeContext = MuiThemeProvider.createDefaultContext({
-                theme
-            });
-            styleManager = themeContext.styleManager;
-        } else {
-            styleManager.updateTheme(theme);
-        }
-
         return (
-            <MuiThemeProvider theme={theme} styleManager={styleManager}>
+            <MuiThemeProvider theme={theme}>
                 <Provider>
                     <Router>
                         <Shell />
