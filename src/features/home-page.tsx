@@ -8,7 +8,7 @@ import Typography from 'material-ui/Typography';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
 
-import { Titlebar } from 'core/components';
+import { Titlebar } from 'shared/components';
 
 const styleSheet = createStyleSheet('HomePage', theme => ({
     root: {
