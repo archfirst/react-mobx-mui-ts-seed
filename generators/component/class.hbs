@@ -1,0 +1,31 @@
+import * as React from 'react';
+
+import { createStyleSheet, withStyles } from 'material-ui/styles';
+import Typography from 'material-ui/Typography';
+
+const styleSheet = createStyleSheet('{{ properCase componentName }}', (theme) => ({
+    root: {
+        padding: theme.spacing.unit
+    }
+}));
+
+interface {{ properCase componentName }}Props {
+    // tslint:disable-next-line
+    classes: any;
+}
+
+class {{ properCase componentName }}Base extends React.Component<{{ properCase componentName }}Props, {}> {
+
+    render() {
+        const { classes } = this.props;
+
+        return (
+            <div className={classes.root}>
+                <Typography type="title">{{ properCase componentName }}</Typography>
+            </div>
+        );
+    }
+
+}
+
+export const {{ properCase componentName }} = withStyles(styleSheet)({{ properCase componentName }}Base);

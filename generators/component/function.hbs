@@ -1,0 +1,21 @@
+import * as React from 'react';
+
+import { createStyleSheet, withStyles } from 'material-ui/styles';
+import Typography from 'material-ui/Typography';
+
+const styleSheet = createStyleSheet('{{ properCase componentName }}', (theme) => ({
+    root: {
+        padding: theme.spacing.unit
+    }
+}));
+
+function {{ properCase componentName }}Base({ classes, dummy }) {
+
+    return (
+        <div className={classes.root}>
+            <Typography type="title">{{ properCase componentName }}{dummy}</Typography>
+        </div>
+    );
+}
+
+export const {{ properCase componentName }} = withStyles(styleSheet)({{ properCase componentName }}Base);
