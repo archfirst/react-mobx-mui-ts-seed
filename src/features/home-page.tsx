@@ -40,7 +40,7 @@ interface HomePageProps {
 }
 
 @observer
-class HomePage extends React.Component<HomePageProps, {}> {
+class HomePageBase extends React.Component<HomePageProps, {}> {
     @observable name = '';
 
     @action
@@ -123,4 +123,4 @@ class HomePage extends React.Component<HomePageProps, {}> {
     }
 }
 
-export default withStyles(styleSheet)(HomePage);
+export const HomePage = withStyles(styleSheet)(HomePageBase);

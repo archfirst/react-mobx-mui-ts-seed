@@ -38,12 +38,12 @@ const styleSheet = createStyleSheet('Shell', theme => ({
     }
 }));
 
-interface ShellProps {
+interface ShellBaseProps {
     // tslint:disable-next-line
     classes: any;
 }
 
-class Shell extends React.Component<ShellProps, {}> {
+class ShellBase extends React.Component<ShellBaseProps, {}> {
     render() {
         const { classes } = this.props;
 
@@ -58,4 +58,4 @@ class Shell extends React.Component<ShellProps, {}> {
     }
 }
 
-export default withRouter(withStyles(styleSheet)(Shell));
+export const Shell = withRouter(withStyles(styleSheet)(ShellBase));
