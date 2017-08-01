@@ -38,12 +38,12 @@ const styleSheet = createStyleSheet('Shell', theme => ({
     }
 }));
 
-interface ShellBaseProps {
+interface ShellProps {
     // tslint:disable-next-line
     classes: any;
 }
 
-class ShellBase extends React.Component<ShellBaseProps, {}> {
+class ShellBase extends React.Component<ShellProps, {}> {
     render() {
         const { classes } = this.props;
 
