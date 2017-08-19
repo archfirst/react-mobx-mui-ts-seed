@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import AddIcon from 'material-ui-icons/Add';
 import Button from 'material-ui/Button';
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import TextField from 'material-ui/TextField';
 import Typography from 'material-ui/Typography';
 import { action, observable } from 'mobx';
@@ -10,7 +10,7 @@ import { observer } from 'mobx-react';
 
 import { Titlebar } from 'shared/components';
 
-const styleSheet = createStyleSheet('HomePage', theme => ({
+const styles = theme => ({
     root: {
         height: '100%',
         display: 'flex',
@@ -32,7 +32,7 @@ const styleSheet = createStyleSheet('HomePage', theme => ({
     input: {
         margin: theme.spacing.unit
     }
-}));
+});
 
 interface HomePageProps {
     // tslint:disable-next-line
@@ -123,4 +123,4 @@ class HomePageBase extends React.Component<HomePageProps, {}> {
     }
 }
 
-export const HomePage = withStyles(styleSheet)(HomePageBase);
+export const HomePage = withStyles(styles)(HomePageBase);

@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-import { createStyleSheet, withStyles } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
 
-const styleSheet = createStyleSheet('{{ properCase componentName }}', (theme) => ({
+const styles = theme => ({
     root: {
         padding: theme.spacing.unit
     }
-}));
+});
 
 interface {{ properCase componentName }}Props {
     // tslint:disable-next-line
@@ -15,7 +15,6 @@ interface {{ properCase componentName }}Props {
 }
 
 class {{ properCase componentName }}Base extends React.Component<{{ properCase componentName }}Props, {}> {
-
     render() {
         const { classes } = this.props;
 
@@ -25,7 +24,6 @@ class {{ properCase componentName }}Base extends React.Component<{{ properCase c
             </div>
         );
     }
-
 }
 
-export const {{ properCase componentName }} = withStyles(styleSheet)({{ properCase componentName }}Base);
+export const {{ properCase componentName }} = withStyles(styles)({{ properCase componentName }}Base);

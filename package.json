@@ -12,18 +12,18 @@
   "devDependencies": {
     "husky": "^0.14.3",
     "inquirer-directory": "^2.1.0",
-    "lint-staged": "^4.0.2",
+    "lint-staged": "^4.0.3",
     "plop": "^1.8.0",
     "prettier": "^1.5.3",
-    "react-scripts-ts": "2.4.0"
+    "react-scripts-ts": "^2.6.0"
   },
   "dependencies": {
-    "@types/jest": "^20.0.5",
-    "@types/node": "^8.0.17",
-    "@types/react": "^15.6.0",
-    "@types/react-dom": "^15.5.1",
-    "material-ui": "^1.0.0-beta.3",
-    "material-ui-icons": "^1.0.0-alpha.19",
+    "@types/jest": "^20.0.7",
+    "@types/node": "^8.0.24",
+    "@types/react": "^15.6.1",
+    "@types/react-dom": "^15.5.3",
+    "material-ui": "^1.0.0-beta.5",
+    "material-ui-icons": "^1.0.0-beta.5",
     "mobx": "^3.2.2",
     "mobx-react": "^4.1.8",
     "react": "^15.6.1",
