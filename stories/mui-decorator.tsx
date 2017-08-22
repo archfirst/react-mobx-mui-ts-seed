@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import blue from 'material-ui/colors/blue';
 import pink from 'material-ui/colors/pink';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -22,7 +22,10 @@ const typography = createTypography(palette, {
 
 const theme = createMuiTheme({ palette, typography });
 
-export const MuiDecorator = story =>
-    <MuiThemeProvider theme={theme}>
-        {story()}
-    </MuiThemeProvider>;
+export const MuiDecorator = story => {
+    return (
+        <MuiThemeProvider theme={theme}>
+            {story()}
+        </MuiThemeProvider>
+    );
+};

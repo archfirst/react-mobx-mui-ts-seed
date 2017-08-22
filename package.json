@@ -41,7 +41,7 @@
     "gen": "plop --plopfile generators/plopfile.js",
     "format": "prettier --print-width 80 --tab-width 4 --single-quote --parser typescript --write 'src/**/*.ts*'",
     "precommit": "lint-staged",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -c .storybook",
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
