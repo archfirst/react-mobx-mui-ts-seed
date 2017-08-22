@@ -1,9 +1,11 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import * as React from 'react';
+import { addDecorator, storiesOf } from '@storybook/react';
 
-import { Titlebar } from 'shared/components';
+import { Titlebar } from '../src/shared/components';
 import { MuiDecorator } from './mui-decorator';
 
-storiesOf('Titlebar', module)
-    .addDecorator(MuiDecorator)
-    .add('default', () => <Titlebar>React MobX MUI Seed</Titlebar>);
+addDecorator(MuiDecorator);
+
+storiesOf('Titlebar', module).add('default', () =>
+    <Titlebar>React MobX MUI Seed</Titlebar>
+);

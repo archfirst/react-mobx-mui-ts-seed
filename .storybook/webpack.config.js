@@ -9,27 +9,34 @@
 const path = require('path');
 
 const SRC_PATH = path.join(__dirname, '../src');
+const STORIES_PATH = path.join(__dirname, '../stories');
 
 module.exports = {
     module: {
         rules: [
-            { test: /\.ts$/, loader: 'ts-loader', exclude: /node_modules/ },
-            { test: /\.tsx$/, loader: 'ts-loader', exclude: /node_modules/ },
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                include: [
+                    SRC_PATH,
+                    STORIES_PATH
+                ]
+            },
             {
                 test: /\.(jpg|png|svg)$/,
                 loader: 'file-loader',
-                exclude: /node_modules/
+                include: SRC_PATH
             },
             {
                 test: /\.css$/,
-                use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+                use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+                include: SRC_PATH
             }
         ]
     },
 
     resolve: {
-        modules: [SRC_PATH, 'node_modules']
-    },
-
-    plugins: []
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+        enforceExtension: false
+    }
 };
